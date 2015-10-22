@@ -73,15 +73,19 @@ nav ul li {
 	height: 100%; /*quiere decir q esa imagen tome el 100% de la pantalla*/
 	text-align: center;
 	color: #FFFFFF;
-	
+
 }
 
 h1 {
 	font-size: 60px;
+	text-transform: uppercase;/*vuelve mayuscula los elementos*/
 }
 
 .boton {
 	color: #FFFFFF;
 	text-decoration: none;
+	text-transform: uppercase;
+	background-color: #FFB400;
+	padding: 20px 30px 20px 30px;/*margen interior que se da a un elementos*/
 }
 
