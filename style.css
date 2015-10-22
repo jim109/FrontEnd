@@ -52,10 +52,14 @@ table {
 html , body {
 	color: #282828;
 	height: 100%;
+	font-family: 'Montserrat', sans-serif;
+
 }
 
-header{
+header, footer{
 	background-color: #282828;
+	position: absolute;
+	width: 100%;
 }
 
 header img {
@@ -66,19 +70,26 @@ header img {
 nav ul li {
 	color: #FFFFFF;
 	display: inline;
+	font-weight: 400;
 }
 
 .home {
-	background-image: url(assets/bg.jpg);
-	height: 100%; /*quiere decir q esa imagen tome el 100% de la pantalla*/
+	background: #FFFFFF url('assets/bg.jpg') no-repeat center center fixed;
+	background-size: cover;/*toma la imagen y la adapta sin alterar el radio y que sea proporcional al navegador*/
+	-webkit-background-size:cover;/*esto se usa para hacer el efecto cover en navegadores viejos*/
+	-moz-background-size:cover;/*esto se usa para hacer el efecto cover en navegadores viejos*/
+	/*height: 100%; /*quiere decir q esa imagen tome el 100% de la pantalla*/
 	text-align: center;
 	color: #FFFFFF;
+	padding: 20% 0;
+	box-sizing:border-box ;/*para que la imagen no crezca mas solo hasta cuando le digamos*/
 
 }
 
 h1 {
-	font-size: 60px;
+	font-size: 50px;
 	text-transform: uppercase;/*vuelve mayuscula los elementos*/
+	font-weight: 700;/*peso del grosor de la letra en este casi es bold*/
 }
 
 .boton {
@@ -86,6 +97,28 @@ h1 {
 	text-decoration: none;
 	text-transform: uppercase;
 	background-color: #FFB400;
-	padding: 20px 30px 20px 30px;/*margen interior que se da a un elementos*/
+	padding: 20px 30px;/*margen interior que se da a un elementos*/
+	font-weight: 400;
+	border-bottom: 6px solid #e49100;
+	border-radius: 5px;/*le da un toque redondeado a el boton*/
+	-webkit-border-radius: 5px; /*damos el mismo radius que esta encima pero este es una opcion para navegadores viejos*/
+
 }
+
+footer, footer a {
+	color: #FFFFFF;
+}
+
+a{
+	text-decoration: none;
+}
+
+footer{
+	padding: 20px 0px;
+	box-sizing: border-box;
+}
+
+
+
+
 
